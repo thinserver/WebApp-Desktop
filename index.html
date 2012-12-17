@@ -5,19 +5,38 @@
 	<style>
 		body			{
 					background-color:		darkblue;
+					background-image:		url('WebApp-Desktop/curve.png');
+					background-repeat:		no-repeat;
+					background-size:		100%;
 					}
 		button		{
 					cursor:				pointer;
+					width:				100px;
+					}
+		button img	{
+					width:				100%;
 					}
 	</style>
 </head>
 
 <body>
-<div style="width:60%; position: absolute; left: 20%; top: 20%;">
-	<a href="/WebApp-Desktop"><font size=17 color=white style="text-decoration:none;">WebApp-Desktop</font></a>
+<div style="width:60%; position: absolute; left: 20%; top: 25%;">
+	<font size=17 color=white style="text-decoration:none;">Kanzleiserver</font>
 	<hr/>
+	<button onclick="window.location.href='/OpenLawyers/';">
+		<img src="WebApp-Desktop/OpenLawyers.png"/><br/>
+		OpenLawyers
+	</button>
+	<button onclick="window.location.href='/MediaWiki/';">
+		<img src="WebApp-Desktop/MediaWiki.png"/><br/>
+		Wiki
+	</button>
+	<button onclick="window.location.href='/ownCloud/';">
+		<img src="WebApp-Desktop/ownCloud.png"/><br/>
+		ownCloud
+	</button>
 	<button onclick="window.location.href='/WebSC/';">
-		<img src="key.png"/><br/>
+		<img src="WebApp-Desktop/key.png"/><br/>
 		WebSC
 	</button>
 </div>
