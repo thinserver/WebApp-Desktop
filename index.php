@@ -14,7 +14,10 @@
 					width:				100px;
 					}
 		button img	{
-					width:				100%;
+					padding:				none;
+					margin:				none;
+					width:				85;
+					height:				85;
 					/*box-shadow:			2px 2px 5px darkgray;*/
 					}
 		div.menu		{
@@ -30,13 +33,26 @@
 	<tr style="width: 100%;">
 		<td align=center style="width: 100%; vertical-align: middle;">
 			<div class=menu id=menu>
-				<font size=17 color=darkblue style="text-decoration:none; text-shadow: 2px 2px 5px darkgray;">Kanzleiserver</font>
+				<font size=17 color="#202020" style="text-decoration:none; text-shadow: 2px 2px 5px darkgray;">Kanzleiserver</font>
 				<hr/>
+				Willkommen, <?php
+							$values = [];
+							foreach (explode('/', $_SERVER['SSL_CLIENT_S_DN']) as $definition) {
+								$e = explode('=', $definition);
+								if ($e[0] != '')
+									$values[ $e[0] ] = $e[1];
+								}
+							#print_r($values);
+							if (array_key_exists('CN', $values))
+								$friendlyName = $values['CN'];
+							else	$friendlyName = 'Unbekannter';
+							echo $friendlyName;
+							?> !<br/><br/>
 				<button onclick="window.location.href='/OpenLawyers/';">
 					<img src="Desktop/OpenLawyers.png"/><br/>
 					OpenLawyers
 				</button>
-				<button onclick="window.location.href='/LawyerWiki/';">
+				<button onclick="window.location.href='/LawyerWiki/index.php/Kategorie:Portal';">
 					<img src="Desktop/Puzzle.png"/><br/>
 					Wiki
 				</button>
