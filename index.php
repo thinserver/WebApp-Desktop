@@ -48,22 +48,47 @@
 							else	$friendlyName = 'Unbekannter';
 							echo $friendlyName;
 							?> !<br/><br/>
-				<button onclick="window.location.href='/OpenLawyers/';">
-					<img src="Desktop/OpenLawyers.png"/><br/>
-					OpenLawyers
-				</button>
-				<button onclick="window.location.href='/LawyerWiki/index.php/Kategorie:Portal';">
-					<img src="Desktop/Puzzle.png"/><br/>
-					Wiki
-				</button>
-				<button onclick="window.location.href='/LawyerCloud/';">
-					<img src="Desktop/ownCloud.png"/><br/>
-					ownCloud
-				</button>
-				<button onclick="window.location.href='/WebSC/';">
-					<img src="Desktop/keycard.png"/><br/>
-					WebSC
-				</button>
+				<table border=0 cellpadding=0 cellspacing=12>
+					<tr><td>
+						<button onclick="window.location.href='/OpenLawyers/';">
+							<img src="Desktop/OpenLawyers.png"/><br/>
+							OpenLawyers
+						</button>
+						</td>
+						<td>
+						<button onclick="window.location.href='/PHPAdvokat/';">
+							<img src="Desktop/PHPAdvokat.png"/><br/>
+							PHPAdvokat
+						</button>
+						</td>
+						<td>
+						<button onclick="window.location.href='/LawyerWiki/index.php/Kategorie:Portal';">
+							<img src="Desktop/Puzzle.png"/><br/>
+							Wiki
+						</button>
+						</td>
+						</tr><tr>
+						<td>
+						<button onclick="window.location.href='/LawyerCloud/';">
+							<img src="Desktop/ownCloud.png"/><br/>
+							ownCloud
+						</button>
+						</td>
+						<td>
+						<button onclick="window.location.href='/WebSC/';">
+							<img src="Desktop/keycard.png"/><br/>
+							WebSC
+						</button>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</table>
+				<br/>
+				<hr/>
+				<small>
+				Du: <?php echo $_SERVER['REMOTE_ADDR']; ?>, der Kanzleiserver: <?php echo $_SERVER['SERVER_ADDR']; ?>
+				</small>
 			</div>
 			<!--div class=shadow id=shadow></div-->
 		</td>
