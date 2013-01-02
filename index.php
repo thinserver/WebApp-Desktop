@@ -11,7 +11,7 @@
 					}
 		button		{
 					cursor:				pointer;
-					width:				100px;
+					width:				120px;
 					}
 		button img	{
 					padding:				none;
@@ -21,6 +21,9 @@
 					/*box-shadow:			2px 2px 5px darkgray;*/
 					}
 		div.menu		{
+					background:			#e0e0e0;
+					border-radius:			15px;
+					padding:				10px;
 					width:				450px;
 					left:					30%;
 					top:					25%;"
@@ -49,38 +52,40 @@
 							echo $friendlyName;
 							?> !<br/><br/>
 				<table border=0 cellpadding=0 cellspacing=12>
-					<tr><td>
-						<button onclick="window.location.href='/OpenLawyers/';">
-							<img src="Desktop/OpenLawyers.png"/><br/>
-							OpenLawyers
-						</button>
+					<tr>
+						<td>
+							<button onclick="window.location.href='/LawyerWiki/index.php/Kategorie:Portal';">
+								<img src="Desktop/Puzzle.png"/><br/>
+								Wiki
+							</button>
 						</td>
 						<td>
-						<button onclick="window.location.href='/PHPAdvokat/';">
-							<img src="Desktop/PHPAdvokat.png"/><br/>
-							PHPAdvokat
-						</button>
+							<button onclick="window.location.href='/LawyerCloud/';">
+								<img src="Desktop/ownCloud.png"/><br/>
+								Cloud-Dienste
+							</button>
 						</td>
 						<td>
-						<button onclick="window.location.href='/LawyerWiki/index.php/Kategorie:Portal';">
-							<img src="Desktop/Puzzle.png"/><br/>
-							Wiki
-						</button>
-						</td>
-						</tr><tr>
-						<td>
-						<button onclick="window.location.href='/LawyerCloud/';">
-							<img src="Desktop/ownCloud.png"/><br/>
-							ownCloud
-						</button>
+							<button onclick="window.location.href='/WebSC/';">
+								<img src="Desktop/keycard.png"/><br/>
+								Verschl&uuml;sselung
+							</button>
 						</td>
 						<td>
-						<button onclick="window.location.href='/WebSC/';">
-							<img src="Desktop/keycard.png"/><br/>
-							WebSC
-						</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button onclick="window.location.href='/OpenLawyers/';">
+								<img src="Desktop/OpenLawyers.png"/><br/>
+								OpenLawyers
+							</button>
 						</td>
 						<td>
+							<button onclick="window.location.href='/PHPAdvokat/';">
+								<img src="Desktop/PHPAdvokat.png"/><br/>
+								PHPAdvokat
+							</button>
 						</td>
 					</tr>
 				</table>
